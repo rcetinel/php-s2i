@@ -1,17 +1,12 @@
-#!/bin/bash
+#/bin/bash
 
 mkdir ./gitrepo 
 echo "Before assembling"
 
-cd ./gitrepo
-git clone https://github.com/rcetinel/html 
-
 echo "First clone process is OK" 
-mkdir ./privaterepo
+cd ./gitrepo
 echo "Priv repo clone will be started "
 git clone -v --progress https://github.com/linuxera-tr/Satellite6
-
-
 /usr/libexec/s2i/assemble
 rc=$?
 
