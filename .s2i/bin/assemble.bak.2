@@ -1,15 +1,12 @@
 #!/bin/bash
 
 mkdir ./gitrepo 
+touch ./hellllllooo
+
 echo "Before assembling"
 
 cd ./gitrepo
 git clone https://github.com/rcetinel/html 
-
-cd ./
-mkdir ./privaterepo
-git clone https://github.com/linuxera-tr/Scripts
-
 
 /usr/libexec/s2i/assemble
 rc=$?
