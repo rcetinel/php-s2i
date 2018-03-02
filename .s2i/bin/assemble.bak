@@ -1,12 +1,7 @@
 #!/bin/bash
-
-mkdir ./gitrepo 
 touch ./hellllllooo
 
 echo "Before assembling"
-
-cd ./gitrepo
-git clone https://github.com/rcetinel/html 
 
 /usr/libexec/s2i/assemble
 rc=$?
