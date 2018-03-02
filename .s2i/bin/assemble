@@ -2,7 +2,6 @@
 
 mkdir ./gitrepo 
 echo "Before assembling"
-
 echo "First clone process is OK" 
 cd ./gitrepo
 echo "Priv repo clone will be started "
