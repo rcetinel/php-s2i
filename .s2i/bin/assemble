@@ -4,11 +4,12 @@ mkdir ./gitrepo
 echo "Before assembling"
 
 cd ./gitrepo
-git clone https://github.com/rcetinel/html 
+git clone -v --progress https://github.com/rcetinel/html 
 
-cd ./
+echo "First clone process is OK" 
 mkdir ./privaterepo
-git clone https://github.com/linuxera-tr/Scripts
+echo "Priv repo clone will be started "
+git clone -v --progress https://github.com/linuxera-tr/Scripts
 
 
 /usr/libexec/s2i/assemble
