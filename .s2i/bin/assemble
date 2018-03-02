@@ -21,3 +21,5 @@ else
     echo "After failed assembling"
 fi
 exit $rc
+
+
