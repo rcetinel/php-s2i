@@ -1,4 +1,6 @@
 #!/bin/bash
+touch ./hellllllooo
+
 echo "Before assembling"
 
 /usr/libexec/s2i/assemble
@@ -9,5 +11,4 @@ if [ $rc -eq 0 ]; then
 else
     echo "After failed assembling"
 fi
-
 exit $rc
